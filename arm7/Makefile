@@ -40,7 +40,7 @@ CXXFLAGS	:=	$(CFLAGS) -fno-rtti -fno-exceptions -fno-rtti
 ASFLAGS	:=	$(ARCH)	$(CFLAGS)
 LDFLAGS	=	-specs=ds_arm7.specs $(ARCH) -Wl,-Map,$(notdir $*).map
 
-LIBS	:=	 -lnds7
+LIBS	:=	 -ldswifi7 -lnds7
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
